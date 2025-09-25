@@ -1,2 +1,14 @@
 # ChromeCastHomeMade
-Make a chromecast with a raspberry pi
+Like chromecast but minimal
+
+## Prerequisites
+- libav
+- cmake 
+
+## Building
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
