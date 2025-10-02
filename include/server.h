@@ -11,4 +11,5 @@
     #define SA struct sockaddr
 
 int create_socket();
+int screen_miroring(int argc, char *argv[]);
 #endif

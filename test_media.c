@@ -1,6 +1,6 @@
 #include <gst/gst.h>
 
-int main(int argc, char *argv[])
+int screen_miroring(int argc, char *argv[])
 {
     GstElement *pipeline;
     GstBus *bus;

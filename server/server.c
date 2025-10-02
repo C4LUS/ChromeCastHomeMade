@@ -62,7 +62,7 @@ void func(int con_fd)
         if (strncmp("exit", buff, 4) == 0) { 
             printf("Server Exit...\n"); 
             break; 
-        } 
+        }
     } 
 }
 
