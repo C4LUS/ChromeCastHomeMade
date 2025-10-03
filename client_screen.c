@@ -9,8 +9,7 @@ int main(int argc, char *argv[])
     /* Initialize GStreamer */
     gst_init(&argc, &argv);
 
-    /* Pipeline de test : génère un motif de test vidéo et l’affiche */
-    pipeline = gst_parse_launch("gst-launch-1.0 ximagesrc ! videoconvert ! autovideosink", NULL);
+    pipeline = gst_parse_launch("gst-launch-1.0 ximagesrc ! videoconvert ! x264enc ! rtph264pay config-interval=1 pt=96 ! udpsink host=10.49.84.136 port=5000", NULL);
     if (!pipeline) {
         g_printerr("Failed to create pipeline\n");
         return -1;
